@@ -1,0 +1,439 @@
+{
+  "analyticsCode": "",
+  "pageLayout": "two-column",
+  "basics": {
+    "name": "Dev JM",
+    "label": "Mid Full Stack Developer",
+    "image": "/avatar.png",
+    "email": "jmazariegosa.dev@gmail.com",
+    "url": "https://www.gcxstudio.cn",
+    "summary": "Born in 1996, I primarily work with Laravel and JavaScript for full-stack development, and enjoy working with various technologies.",
+    "theme": "red",
+    "location": {
+      "address": "Puerto Barrios",
+      "city": "Izabal",
+      "countryCode": "GT",
+      "region": "Guatemala"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "icon": "mdi:linkedin",
+        "username": "Jenry Oswaldo Mazariegos Aragon",
+        "url": "https://www.linkedin.com/in/jenry-oswaldo-mazariegos-aragon-220333168/"
+      },
+      {
+        "network": "Dev.to",
+        "icon": "mdi:dev-to",
+        "username": "devjm",
+        "url": "https://dev.to/devjm"
+      },
+      {
+        "network": "GitHub",
+        "icon": "mdi:github",
+        "username": "Jenry-MA",
+        "url": "https://github.com/Jenry-MA"
+      }
+    ],
+    "beian": {
+      "mint": "赣ICP备2021005460号-1",
+      "police": "赣公网安备 36010302000349号"
+    }
+  },
+  "images": {
+    "intro": "Photography is the art of light, and images are the contours of memory.",
+    "list": [
+      {
+        "image": "https://i0.hdslb.com/bfs/article/6720a7355fd11b9666e2716cadf04e45480025691.jpg@90q_1e_1c.webp",
+        "alt": "Sunset in Nanchang",
+        "desc": "Shot on a sunny day in Nanchang. 2024.10.05"
+      },
+      {
+        "image": "https://i0.hdslb.com/bfs/article/82f680f56532d942f74d86801abf49ea480025691.jpg@90q_1e_1c.webp",
+        "alt": "My Cat",
+        "desc": "A Ragdoll cat who stayed for a year. She's a girl."
+      },
+      {
+        "image": "https://i0.hdslb.com/bfs/article/14e6ae3c368b0eddeeb2b5c338239486480025691.jpg@90q_1e_1c.webp",
+        "alt": "Emoji",
+        "desc": "True, dude"
+      },
+      {
+        "image": "https://i0.hdslb.com/bfs/article/fe1737e9d7b6c2b21eedaf60b6dc9f86480025691.jpg@90q_1e_1c.webp",
+        "alt": "Cat Kernel Crashed",
+        "desc": "Cat Kernel Crashed"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "University Mariano Galvez of Guatemala",
+      "url": "",
+      "area": "Systems Engineering",
+      "studyType": "Full-time student",
+      "startDate": "2014-02-01",
+      "endDate": "2021-12-01"
+    },
+    {
+      "institution": "University Mariano Galvez of Guatemala",
+      "url": "",
+      "area": "Master's degree in Networking and Telecommunications",
+      "studyType": "Full-time student",
+      "startDate": "2023-01-08",
+      "endDate": "2024-12-07"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "date": "2024-06-01",
+      "url": "yunakademy.com",
+      "issuer": "Yun Akademy"
+    }
+  ],
+  "work": [
+    {
+      "name": "Simple Sourcing Development Team",
+      "position": "Full-stack Developer",
+      "location_type": "Remote",
+      "location": "Guatemala",
+      "url": "https://github.com/Sgguo-Development-Team",
+      "startDate": "2023-08-01",
+      "endDate": null,
+      "summary": "Developing high-availability full-stack projects.",
+      "highlights": ["Enhanced internal workflow efficiency by 30%."],
+      "responsibilities": [
+        "Developed and maintained backend and frontend services for multiple projects."
+      ],
+      "achievements": [
+        "Developed an HR management module to handle interview scheduling and maintain logs throughout the recruitment process.",
+        "Built a system to manage internal teams, organized by company entities for better oversight and collaboration.",
+        "Administered user accounts and permissions to ensure secure and role-based access control.",
+        "Created a dashboard to visualize key statistics and performance metrics of the internal team.",
+        "Utilized AI to analyze legal documents and generate summaries highlighting key issues requiring amendment.",
+        "Developed a system for managing and tracking security incidents with legal implications."
+      ],
+      "skills": {
+        "PHP": "simple-icons:php",
+        "Node": "ri:nodejs-line",
+        "Golang": "simple-icons:go",
+        "Next.js": "ri:nextjs-fill",
+        "React": "mdi:react",
+        "SQL": "simple-icons:mysql",
+        "Git": "mdi:git",
+        "GitHub": "mdi:github",
+        "NestJS": "simple-icons:nestjs",
+        "Vue": "mdi:vuejs"
+      }
+    },
+    {
+      "name": "Rutt.io Town Team",
+      "position": "Full-stack Developer",
+      "location_type": "Remote",
+      "location": "Guatemala",
+      "url": null,
+      "startDate": "2021-11-16",
+      "endDate": "2022-02-21",
+      "summary": "Led page design and account systems.",
+      "highlights": ["Completed 95% of project content."],
+      "responsibilities": [
+        "Developed complete pages.",
+        "Integrated user-facing elements with server-side logic."
+      ],
+      "achievements": ["Ensured smooth project execution."],
+      "skills": {
+        "HTML": "simple-icons:html5",
+        "CSS": "ri:css3-fill",
+        "JavaScript": "simple-icons:javascript",
+        "TypeScript": "simple-icons:typescript",
+        "Vite": "simple-icons:vite",
+        "Node": "ri:nodejs-line",
+        "Docker": "mdi:docker",
+        "WordPress": "ri:wordpress-fill",
+        "Astro": "simple-icons:astro",
+        "SQL": "simple-icons:mysql",
+        "Tailwind": "mdi:tailwind",
+        "React": "mdi:react",
+        "GitHub": "mdi:github",
+        "Git": "mdi:git"
+      }
+    },
+    {
+      "name": "Freelance",
+      "position": "Full-stack Developer",
+      "location_type": "Remote",
+      "location": "Guatemala",
+      "url": null,
+      "startDate": "2022-07-08",
+      "endDate": "2023-03-11",
+      "summary": "Led page design and account systems.",
+      "highlights": ["Completed 95% of project content."],
+      "responsibilities": [
+        "Developed complete pages.",
+        "Integrated user-facing elements with server-side logic."
+      ],
+      "achievements": ["Ensured smooth project execution."],
+      "skills": {
+        "HTML": "simple-icons:html5",
+        "CSS": "ri:css3-fill",
+        "JavaScript": "simple-icons:javascript",
+        "TypeScript": "simple-icons:typescript",
+        "Vite": "simple-icons:vite",
+        "Node": "ri:nodejs-line",
+        "Docker": "mdi:docker",
+        "WordPress": "ri:wordpress-fill",
+        "Astro": "simple-icons:astro",
+        "SQL": "simple-icons:mysql",
+        "Tailwind": "mdi:tailwind",
+        "React": "mdi:react",
+        "GitHub": "mdi:github",
+        "Git": "mdi:git"
+      }
+    },
+    {
+      "name": "Freelance",
+      "position": "Full-stack Developer",
+      "location_type": "Remote",
+      "location": "Guatemala",
+      "url": null,
+      "startDate": "2021-11-16",
+      "endDate": "2022-02-21",
+      "summary": "Fullstack developer for a systema to manage warehouses with an specific client, tracking the stock of products, vessels, day of arrived, departured, containers.",
+      "highlights": ["Completed 100% of project content."],
+      "responsibilities": [
+        "Roles and Permissions",
+        "UI/UX Design",
+        "Developed complete pages.",
+        "Tracking the stock of products, vessels, day of arrived, departured, containers.",
+        "Exporting reports in PDF and Excel.",
+        "Integrated user-facing elements with server-side logic.",
+        "Filling stock on basis documents provided by the client."
+      ],
+      "achievements": ["Ensured smooth project execution."],
+      "skills": {
+        "HTML": "simple-icons:html5",
+        "CSS": "ri:css3-fill",
+        "JavaScript": "simple-icons:javascript",
+        "TypeScript": "simple-icons:typescript",
+        "Vite": "simple-icons:vite",
+        "Node": "ri:nodejs-line",
+        "Docker": "mdi:docker",
+        "WordPress": "ri:wordpress-fill",
+        "Astro": "simple-icons:astro",
+        "SQL": "simple-icons:mysql",
+        "Tailwind": "mdi:tailwind",
+        "React": "mdi:react",
+        "GitHub": "mdi:github",
+        "Git": "mdi:git"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "icon": "simple-icons:html5",
+      "level": "Expert",
+      "keywords": ["Web Development", "Frontend"]
+    },
+    {
+      "name": "CSS",
+      "icon": "ri:css3-fill",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Frontend", "Responsive Design"]
+    },
+    {
+      "name": "JavaScript",
+      "icon": "simple-icons:javascript",
+      "level": "Expert",
+      "keywords": ["Web Development", "Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "Tailwind",
+      "icon": "mdi:tailwind",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "CSS Framework",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "icon": "simple-icons:typescript",
+      "level": "Expert",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "icon": "ri:nodejs-line",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Backend", "JavaScript", "Server"]
+    },
+    {
+      "name": "SQL",
+      "icon": "simple-icons:mysql",
+      "level": "Intermediate",
+      "keywords": ["Databases", "SQL", "Data Storage", "Backend"]
+    },
+    {
+      "name": "Git",
+      "icon": "mdi:git",
+      "level": "Intermediate",
+      "keywords": ["Version Control", "Collaboration", "Source Code"]
+    },
+    {
+      "name": "GitHub",
+      "icon": "mdi:github",
+      "level": "Expert",
+      "keywords": ["Version Control", "Collaboration", "Source Code", "Git"]
+    },
+    {
+      "name": "Laragon",
+      "icon": "simple-icons:laragon",
+      "level": "Intermediate",
+      "keywords": ["Version Control", "Collaboration", "Source Code", "Git"]
+    },
+    {
+      "name": "Next.js",
+      "icon": "ri:nextjs-line",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
+      ]
+    },
+    {
+      "name": "React",
+      "icon": "mdi:react",
+      "level": "Expert",
+      "keywords": ["Web Development", "Frontend", "JavaScript Library", "UI"]
+    },
+    {
+      "name": "Vue",
+      "icon": "mdi:vuejs",
+      "level": "Expert",
+      "keywords": ["Web Development", "Frontend", "JavaScript Library", "UI"]
+    },
+    {
+      "name": "Docker",
+      "icon": "mdi:docker",
+      "level": "Intermediate",
+      "keywords": ["Virtual Environments", "Backend"]
+    },
+    {
+      "name": "Vite",
+      "icon": "simple-icons:vite",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Frontend", "Build Tool"]
+    },
+    {
+      "name": "Astro",
+      "icon": "simple-icons:astro",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Frontend", "SSR", "Static Generation"]
+    },
+    {
+      "name": "PHP",
+      "icon": "simple-icons:php",
+      "level": "Expert",
+      "keywords": ["Web Development", "Backend", "Fullstack"]
+    },
+    {
+      "name": "Nginx",
+      "icon": "simple-icons:nginx",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Backend", "Web Server"]
+    },
+    {
+      "name": "Linux",
+      "icon": "simple-icons:linux",
+      "level": "Intermediate",
+      "keywords": ["OS", "Scripting", "Automation"]
+    },
+    {
+      "name": "Netlify",
+      "icon": "simple-icons:netlify",
+      "level": "Intermediate",
+      "keywords": ["Serverless", "Static Site Hosting"]
+    },
+    {
+      "name": "Cloudflare Edge Functions",
+      "icon": "simple-icons:cloudflare",
+      "level": "Expert",
+      "keywords": ["Serverless", "Edge Computing"]
+    },
+    {
+      "name": "AWS",
+      "icon": "mdi:aws",
+      "level": "Intermediate",
+      "keywords": ["Serverless", "Edge Computing"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Espanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Technology",
+      "keywords": ["AI", "Blockchain"]
+    }
+  ],
+  "references": [
+    {
+      "name": "MiraHikari",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Cloudflare Vmail",
+      "image": {
+        "url": "https://i0.hdslb.com/bfs/article/985e2caa8266dee4b9861ee6a341886d480025691.png@1e_1c.webp",
+        "position": "container",
+        "dark": "https://i0.hdslb.com/bfs/article/4d0bf8a784d22e54e3e61763c361c9ef480025691.png@100q_1e_1c.webp"
+      },
+      "isActive": true,
+      "description": "An open source temporary email tool, fully on Cloudflare. Inspired by oiov/vmail",
+      "highlights": [
+        "🎯 Privacy-friendly, no registration required, out-of-the-box",
+        "✨ Support saving passwords and retrieving email addresses",
+        "😄 Support multiple domain name suffixes",
+        "🚀 100% open source, fully based on Cloudflare."
+      ],
+      "url": "https://what-the-fuck.sbs",
+      "github": "https://github.com/MiraHikari/cloudflare-vmail"
+    },
+    {
+      "name": "Riddle Town Hunt 2",
+      "image": {
+        "url": "https://rth2-webstatic.gbclstudio.cn/wp-content/uploads/2024/02/1707656250-76b2b0d2c94824e89a2b8b2c7d1c6afe.png",
+        "position": "background"
+      },
+      "isActive": false,
+      "description": "Public decryption activity in the form of Puzzle Hunt.",
+      "highlights": [
+        "👌 More than 1000 people participated, system runs normally",
+        "😮‍ Use headless CMS: WordPress to storage and manage contents, dynamically render page",
+        "😊 Windows-like interface",
+        "💕 Based on Astro"
+      ],
+      "url": "https://rth2.gcxstudio.cn/"
+    }
+  ]
+}
