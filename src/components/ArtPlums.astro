@@ -1,158 +1,79 @@
----
-// Designed by Antfu.
----
-
-<div
-  class="pointer-events-none fixed bottom-0 left-0 right-0 top-0 print:hidden"
-  style="mask-image: radial-gradient(circle, transparent, black); -webkit-mask-image: radial-gradient(circle, transparent, black);"
->
-  <canvas id="artPlumCanvas" width="400" height="400"></canvas>
+<div class="pointer-events-none fixed inset-0 z-[-1] print:hidden">
+  <canvas id="softLatticeCanvas"></canvas>
 </div>
 
 <script>
-  const r180 = Math.PI;
-  const r90 = Math.PI / 2;
-  const r15 = Math.PI / 12;
-  const color = "#88888825";
+  const canvas = document.getElementById("softLatticeCanvas") as HTMLCanvasElement;
+  const ctx = canvas.getContext("2d");
 
-  const MIN_BRANCH = 30;
-  const len = 6;
+  const POINTS = 60;
+  const MAX_DIST = 120;
+  let width: number, height: number;
+  let points: any[] = [];
 
-  const randomMiddle = (): number => Math.random() * 0.6 + 0.2;
+  let hue = 0;
 
-  interface CanvasSize {
-    width: number;
-    height: number;
+  function resizeCanvas() {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+    generatePoints();
   }
 
-  interface Counter {
-    value: number;
+  function generatePoints() {
+    points = [];
+    for (let i = 0; i < POINTS; i++) {
+      points.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: (Math.random() - 0.5) * 0.3,
+      });
+    }
   }
 
-  const initCanvas = (
-    canvas: HTMLCanvasElement,
-    width: number = 400,
-    height: number = 400,
-    _dpi?: number,
-  ) => {
-    const ctx = canvas.getContext("2d");
-    if (!ctx) throw new Error("Unable to get canvas context");
-
-    const dpr = window.devicePixelRatio || 1;
-
-    const bsr =
-      //@ts-ignore
-      ctx.webkitBackingStorePixelRatio ||
-      //@ts-ignore
-      ctx.mozBackingStorePixelRatio ||
-      //@ts-ignore
-      ctx.msBackingStorePixelRatio ||
-      //@ts-ignore
-      ctx.oBackingStorePixelRatio ||
-      //@ts-ignore
-      ctx.backingStorePixelRatio ||
-      1;
-    const dpi = _dpi || dpr / bsr;
-
-    canvas.style.width = `${width}px`;
-    canvas.style.height = `${height}px`;
-    canvas.width = dpi * width;
-    canvas.height = dpi * height;
-    ctx.scale(dpi, dpi);
-
-    return { ctx, dpi };
-  };
-
-  const polar2cart = (
-    x: number = 0,
-    y: number = 0,
-    r: number = 0,
-    theta: number = 0,
-  ): [number, number] => {
-    const dx = r * Math.cos(theta);
-    const dy = r * Math.sin(theta);
-    return [x + dx, y + dy];
-  };
-
-  const canvas = document.getElementById("artPlumCanvas") as HTMLCanvasElement;
-  const size: CanvasSize = {
-    width: window.innerWidth,
-    height: window.innerHeight,
-  };
-  const { ctx } = initCanvas(canvas, size.width, size.height);
-  const { width, height } = canvas;
-
-  let steps: Array<() => void> = [];
-  let prevSteps: Array<() => void> = [];
-
-  const step = (
-    x: number,
-    y: number,
-    rad: number,
-    counter: Counter = { value: 0 },
-  ): void => {
-    const length = Math.random() * len;
-    counter.value += 1;
-
-    const [nx, ny] = polar2cart(x, y, length, rad);
-
-    ctx.beginPath();
-    ctx.moveTo(x, y);
-    ctx.lineTo(nx, ny);
-    ctx.stroke();
-
-    const rad1 = rad + Math.random() * r15;
-    const rad2 = rad - Math.random() * r15;
-
-    if (
-      nx < -100 ||
-      nx > size.width + 100 ||
-      ny < -100 ||
-      ny > size.height + 100
-    )
-      return;
-
-    const rate = counter.value <= MIN_BRANCH ? 0.8 : 0.5;
-
-    if (Math.random() < rate) steps.push(() => step(nx, ny, rad1, counter));
-    if (Math.random() < rate) steps.push(() => step(nx, ny, rad2, counter));
-  };
-
-  const frame = (): void => {
-    prevSteps = steps;
-    steps = [];
-
-    if (!prevSteps.length) return;
-
-    prevSteps.forEach((i) => {
-      if (Math.random() < 0.5) steps.push(i);
-      else i();
-    });
-
-    requestAnimationFrame(frame);
-  };
-
-  const start = (): void => {
+  function draw() {
+    if (!ctx) return;
     ctx.clearRect(0, 0, width, height);
-    ctx.lineWidth = 1;
-    ctx.strokeStyle = color;
-    prevSteps = [];
-    steps = [
-      () => step(randomMiddle() * size.width, -5, r90),
-      () => step(randomMiddle() * size.width, size.height + 5, -r90),
-      () => step(-5, randomMiddle() * size.height, 0),
-      () => step(size.width + 5, randomMiddle() * size.height, r180),
-    ];
-    if (size.width < 500) steps = steps.slice(0, 2);
-    requestAnimationFrame(frame);
-  };
 
-  start();
+    hue = (hue + 0.2) % 360;
+    const baseColor = `hsl(${hue}, 20%, 50%)`;
 
-  window.addEventListener("resize", () => {
-    size.width = window.innerWidth;
-    size.height = window.innerHeight;
-    initCanvas(canvas, size.width, size.height);
-    start();
-  });
+    for (let i = 0; i < points.length; i++) {
+      const p1 = points[i];
+      p1.x += p1.vx;
+      p1.y += p1.vy;
+
+      if (p1.x < 0 || p1.x > width) p1.vx *= -1;
+      if (p1.y < 0 || p1.y > height) p1.vy *= -1;
+
+      // Draw point
+      ctx.beginPath();
+      ctx.arc(p1.x, p1.y, 1.5, 0, Math.PI * 2);
+      ctx.fillStyle = baseColor;
+      ctx.fill();
+
+      // Connect lines
+      for (let j = i + 1; j < points.length; j++) {
+        const p2 = points[j];
+        const dx = p1.x - p2.x;
+        const dy = p1.y - p2.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < MAX_DIST) {
+          const alpha = 1 - dist / MAX_DIST;
+          ctx.beginPath();
+          ctx.moveTo(p1.x, p1.y);
+          ctx.lineTo(p2.x, p2.y);
+          ctx.strokeStyle = `hsla(${hue}, 20%, 50%, ${alpha * 0.7})`;
+          ctx.lineWidth = 0.5;
+          ctx.stroke();
+        }
+      }
+    }
+
+    requestAnimationFrame(draw);
+  }
+
+  window.addEventListener("resize", resizeCanvas);
+  resizeCanvas();
+  draw();
 </script>
