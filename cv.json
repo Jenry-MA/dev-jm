@@ -100,7 +100,7 @@
       "url": "https://github.com/Sgguo-Development-Team",
       "startDate": "2023-08-01",
       "endDate": null,
-      "summary": "Developing high-availability full-stack projects.",
+      "summary": "Designed and implemented an HR and internal team management system, featuring interview scheduling, role-based access control, and performance dashboards. Integrated AI to analyze legal documents and track security incidents with legal impact.",
       "highlights": ["Enhanced internal workflow efficiency by 30%."],
       "responsibilities": [
         "Developed and maintained backend and frontend services for multiple projects."
@@ -115,47 +115,60 @@
       ],
       "skills": {
         "PHP": "simple-icons:php",
-        "Node": "ri:nodejs-line",
-        "Golang": "simple-icons:go",
-        "Next.js": "ri:nextjs-fill",
-        "React": "mdi:react",
         "SQL": "simple-icons:mysql",
         "Git": "mdi:git",
         "GitHub": "mdi:github",
-        "NestJS": "simple-icons:nestjs",
-        "Vue": "mdi:vuejs"
+        "Laralve": "simple-icons:laravel",
+        "Laravel Nova": "simple-icons:laravelnova",
+        "JavaScript": "simple-icons:javascript",
+        "TypeScript": "simple-icons:typescript",
+        "AWS": "mdi:aws",
+        "Docker": "mdi:docker",
+        "Vite": "simple-icons:vite",
+        "Webpack": "simple-icons:webpack",
+        "Vue": "mdi:vuejs",
+        "React": "mdi:react",
+        "Tailwind": "mdi:tailwind",
+        "Next.js": "ri:nextjs-line",
+        "OpenAI": "simple-icons:openai"
       }
     },
     {
-      "name": "Rutt.io Town Team",
+      "name": "Rutt.io Development Team",
       "position": "Full-stack Developer",
       "location_type": "Remote",
       "location": "Guatemala",
       "url": null,
       "startDate": "2021-11-16",
       "endDate": "2022-02-21",
-      "summary": "Led page design and account systems.",
-      "highlights": ["Completed 95% of project content."],
-      "responsibilities": [
-        "Developed complete pages.",
-        "Integrated user-facing elements with server-side logic."
+      "summary": "Responsible for and provided support in the development of new web and mobile solutions. Actively involved in two projects: one focused on job searching for non-professionals, and the other dedicated to finding freight, car transport, or package delivery services.",
+      "highlights": [
+        "Contributed significantly to the successful deployment of two major cross-platform applications."
       ],
-      "achievements": ["Ensured smooth project execution."],
+      "responsibilities": [
+        "Responsible for developing the web system for managing administrative and client users.",
+        "Development of a control panel for travel requests.",
+        "Development and maintenance of features within the mobile application."
+      ],
+      "achievements": [
+        "Client registration via text message",
+        "Administrative user registration on the web using username and email",
+        "Payment gateway integration in the application",
+        "Statistical control module for tracking client interactions with provided services"
+      ],
       "skills": {
-        "HTML": "simple-icons:html5",
         "CSS": "ri:css3-fill",
         "JavaScript": "simple-icons:javascript",
         "TypeScript": "simple-icons:typescript",
         "Vite": "simple-icons:vite",
-        "Node": "ri:nodejs-line",
-        "Docker": "mdi:docker",
-        "WordPress": "ri:wordpress-fill",
-        "Astro": "simple-icons:astro",
-        "SQL": "simple-icons:mysql",
         "Tailwind": "mdi:tailwind",
         "React": "mdi:react",
+        "React Native": "mdi:react",
+        "Nest.js": "simple-icons:nestjs",
         "GitHub": "mdi:github",
-        "Git": "mdi:git"
+        "Git": "mdi:git",
+        "Firebase": "simple-icons:firebase",
+        "Google Cloud": "simple-icons:googlecloud"
       }
     },
     {
@@ -166,28 +179,32 @@
       "url": null,
       "startDate": "2022-07-08",
       "endDate": "2023-03-11",
-      "summary": "Led page design and account systems.",
+      "summary": "Web solution for managing a hotel and restaurant, including reservation handling, room availability and pricing, as well as inventory control for maintenance supplies and restaurant resources.",
       "highlights": ["Completed 95% of project content."],
       "responsibilities": [
-        "Developed complete pages.",
+        "Roles and Permissions",
+        "UI/UX Design",
         "Integrated user-facing elements with server-side logic."
       ],
-      "achievements": ["Ensured smooth project execution."],
+      "achievements": [
+        "Reservation and payment system for both clients and administrators.",
+        "Inventory management for hotel and restaurant operations.",
+        "Dynamic room pricing based on dates, accounting for high and low seasons in the region.",
+        "Promotional landing page for the hotel."
+      ],
       "skills": {
         "HTML": "simple-icons:html5",
         "CSS": "ri:css3-fill",
         "JavaScript": "simple-icons:javascript",
-        "TypeScript": "simple-icons:typescript",
-        "Vite": "simple-icons:vite",
-        "Node": "ri:nodejs-line",
-        "Docker": "mdi:docker",
-        "WordPress": "ri:wordpress-fill",
-        "Astro": "simple-icons:astro",
+        "Jquery": "simple-icons:jquery",
+        "Laralve": "simple-icons:laravel",
+        "PHP": "simple-icons:php",
+        "Livewire": "simple-icons:livewire",
         "SQL": "simple-icons:mysql",
         "Tailwind": "mdi:tailwind",
-        "React": "mdi:react",
         "GitHub": "mdi:github",
-        "Git": "mdi:git"
+        "Git": "mdi:git",
+        "AWS": "mdi:aws"
       }
     },
     {
@@ -214,17 +231,12 @@
         "HTML": "simple-icons:html5",
         "CSS": "ri:css3-fill",
         "JavaScript": "simple-icons:javascript",
-        "TypeScript": "simple-icons:typescript",
-        "Vite": "simple-icons:vite",
-        "Node": "ri:nodejs-line",
-        "Docker": "mdi:docker",
-        "WordPress": "ri:wordpress-fill",
-        "Astro": "simple-icons:astro",
+        "Jquery": "simple-icons:jquery",
         "SQL": "simple-icons:mysql",
-        "Tailwind": "mdi:tailwind",
-        "React": "mdi:react",
+        "Bootstrap": "simple-icons:bootstrap",
         "GitHub": "mdi:github",
-        "Git": "mdi:git"
+        "Git": "mdi:git",
+        "AWS": "mdi:aws"
       }
     }
   ],
@@ -235,28 +247,12 @@
       "level": "Expert",
       "keywords": ["Web Development", "Frontend"]
     },
-    {
-      "name": "CSS",
-      "icon": "ri:css3-fill",
-      "level": "Intermediate",
-      "keywords": ["Web Development", "Frontend", "Responsive Design"]
-    },
+
     {
       "name": "JavaScript",
       "icon": "simple-icons:javascript",
       "level": "Expert",
       "keywords": ["Web Development", "Frontend", "Backend", "Fullstack"]
-    },
-    {
-      "name": "Tailwind",
-      "icon": "mdi:tailwind",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "CSS Framework",
-        "Responsive Design"
-      ]
     },
     {
       "name": "TypeScript",
@@ -270,16 +266,51 @@
       ]
     },
     {
+      "name": "Nest.js",
+      "icon": "simple-icons:nestjs",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Backend", "Fullstack"]
+    },
+    {
       "name": "Node",
       "icon": "ri:nodejs-line",
       "level": "Intermediate",
       "keywords": ["Web Development", "Backend", "JavaScript", "Server"]
     },
     {
+      "name": "CSS",
+      "icon": "ri:css3-fill",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Frontend", "Responsive Design"]
+    },
+    {
+      "name": "Bootstrap",
+      "icon": "simple-icons:bootstrap",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Frontend", "CSS Framework"]
+    },
+    {
+      "name": "Tailwind",
+      "icon": "mdi:tailwind",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "CSS Framework",
+        "Responsive Design"
+      ]
+    },
+    {
       "name": "SQL",
       "icon": "simple-icons:mysql",
       "level": "Intermediate",
       "keywords": ["Databases", "SQL", "Data Storage", "Backend"]
+    },
+    {
+      "name": "NoSQL",
+      "icon": "simple-icons:mongodb",
+      "level": "Intermediate",
+      "keywords": ["Databases", "NoSQL", "Data Storage", "Backend"]
     },
     {
       "name": "Git",
@@ -292,6 +323,24 @@
       "icon": "mdi:github",
       "level": "Expert",
       "keywords": ["Version Control", "Collaboration", "Source Code", "Git"]
+    },
+    {
+      "name": "Laravel",
+      "icon": "simple-icons:laravel",
+      "level": "Expert",
+      "keywords": ["Web Development", "Backend", "Fullstack"]
+    },
+    {
+      "name": "Laravel Nova",
+      "icon": "simple-icons:laravelnova",
+      "level": "Expert",
+      "keywords": ["Web Development", "Backend", "Fullstack"]
+    },
+    {
+      "name": "Livewire",
+      "icon": "simple-icons:livewire",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Backend", "Fullstack"]
     },
     {
       "name": "Laragon",
@@ -318,28 +367,40 @@
       "keywords": ["Web Development", "Frontend", "JavaScript Library", "UI"]
     },
     {
+      "name": "React Native",
+      "icon": "mdi:react",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Frontend", "JavaScript Library", "UI"]
+    },
+    {
       "name": "Vue",
       "icon": "mdi:vuejs",
       "level": "Expert",
       "keywords": ["Web Development", "Frontend", "JavaScript Library", "UI"]
     },
     {
+      "name": "Astro",
+      "icon": "simple-icons:astro",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Frontend", "SSR", "Static Generation"]
+    },
+    {
       "name": "Docker",
       "icon": "mdi:docker",
-      "level": "Intermediate",
+      "level": "Basic",
       "keywords": ["Virtual Environments", "Backend"]
+    },
+    {
+      "name": "Webpack",
+      "icon": "simple-icons:webpack",
+      "level": "Intermediate",
+      "keywords": ["Web Development", "Frontend", "Build Tool"]
     },
     {
       "name": "Vite",
       "icon": "simple-icons:vite",
       "level": "Intermediate",
       "keywords": ["Web Development", "Frontend", "Build Tool"]
-    },
-    {
-      "name": "Astro",
-      "icon": "simple-icons:astro",
-      "level": "Intermediate",
-      "keywords": ["Web Development", "Frontend", "SSR", "Static Generation"]
     },
     {
       "name": "PHP",
@@ -366,16 +427,28 @@
       "keywords": ["Serverless", "Static Site Hosting"]
     },
     {
-      "name": "Cloudflare Edge Functions",
-      "icon": "simple-icons:cloudflare",
-      "level": "Expert",
-      "keywords": ["Serverless", "Edge Computing"]
+      "name": "Firebase",
+      "icon": "simple-icons:firebase",
+      "level": "Intermediate",
+      "keywords": ["Serverless", "Backend"]
+    },
+    {
+      "name": "Google Cloud",
+      "icon": "simple-icons:googlecloud",
+      "level": "Intermediate",
+      "keywords": ["Serverless", "Backend"]
     },
     {
       "name": "AWS",
       "icon": "mdi:aws",
       "level": "Intermediate",
       "keywords": ["Serverless", "Edge Computing"]
+    },
+    {
+      "name": "OpenAI",
+      "icon": "simple-icons:openai",
+      "level": "Intermediate",
+      "keywords": ["AI", "Backend"]
     }
   ],
   "languages": [
